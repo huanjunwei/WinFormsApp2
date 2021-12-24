@@ -16,7 +16,7 @@ namespace WinFormsApp2
         int jumpspeed;
         int force;
         int score=0;
-        int playerspeed = 7;
+        int playerspeed = 10;
 
 
 
@@ -68,7 +68,7 @@ namespace WinFormsApp2
             }
             if (jumping == true)
             {
-                jumpspeed = -8;
+                jumpspeed = -9;
                 force -= 1;
             }
             else 
@@ -110,7 +110,7 @@ namespace WinFormsApp2
                         {
                             gametimer.Stop();
                             isgameover = true;
-                            textscore.Text = "score:" + score + Environment.NewLine + "you die";
+                            textscore.Text = "score:" + score + Environment.NewLine + "GAME OVER";
                         }
                     }
                 }
