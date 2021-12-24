@@ -157,21 +157,26 @@ namespace WinFormsApp2
 
 
         }
-          
-        private void keyisdown(object sender, KeyEventArgs e)
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Left) 
+
+        }
+
+        private void keyisdown(object sender, KeyEventArgs e) 
+        {
+            if (e.KeyCode == Keys.Left)  
             {
-                goleft = true;
-            }
-            if (e.KeyCode == Keys.Right)
+                goleft = true; 
+            } 
+            if (e.KeyCode == Keys.Right) 
             {
-                goright = true;
+                goright = true; 
             }
             if (e.KeyCode == Keys.Space && jumping ==false)
-
+                 
             {
-                jumping= true;
+                jumping= true; 
             }
             
 
