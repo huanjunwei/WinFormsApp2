@@ -30,6 +30,7 @@ namespace WinFormsApp2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textscore = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -104,7 +105,7 @@ namespace WinFormsApp2
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Magenta;
+            this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox1.Location = new System.Drawing.Point(3, 789);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
@@ -117,6 +118,7 @@ namespace WinFormsApp2
             // textscore
             // 
             this.textscore.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.textscore.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.textscore.Location = new System.Drawing.Point(1002, 11);
             this.textscore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.textscore.Name = "textscore";
@@ -138,7 +140,7 @@ namespace WinFormsApp2
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Lime;
+            this.pictureBox3.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox3.Location = new System.Drawing.Point(473, 422);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
@@ -149,8 +151,8 @@ namespace WinFormsApp2
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Linen;
-            this.pictureBox4.Location = new System.Drawing.Point(473, 579);
+            this.pictureBox4.BackColor = System.Drawing.Color.Maroon;
+            this.pictureBox4.Location = new System.Drawing.Point(490, 579);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(159, 33);
@@ -160,7 +162,7 @@ namespace WinFormsApp2
             // 
             // verticalplatform
             // 
-            this.verticalplatform.BackColor = System.Drawing.Color.Magenta;
+            this.verticalplatform.BackColor = System.Drawing.Color.Maroon;
             this.verticalplatform.Location = new System.Drawing.Point(1047, 510);
             this.verticalplatform.Margin = new System.Windows.Forms.Padding(4);
             this.verticalplatform.Name = "verticalplatform";
@@ -171,7 +173,7 @@ namespace WinFormsApp2
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.pictureBox6.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox6.Location = new System.Drawing.Point(806, 619);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
@@ -193,7 +195,7 @@ namespace WinFormsApp2
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.MediumBlue;
+            this.pictureBox8.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox8.Location = new System.Drawing.Point(357, 749);
             this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox8.Name = "pictureBox8";
@@ -204,7 +206,7 @@ namespace WinFormsApp2
             // 
             // pictureBox9
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.pictureBox9.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox9.Location = new System.Drawing.Point(221, 347);
             this.pictureBox9.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox9.Name = "pictureBox9";
@@ -215,7 +217,7 @@ namespace WinFormsApp2
             // 
             // pictureBox10
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.MediumBlue;
+            this.pictureBox10.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox10.Location = new System.Drawing.Point(491, 288);
             this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox10.Name = "pictureBox10";
@@ -226,7 +228,7 @@ namespace WinFormsApp2
             // 
             // pictureBox11
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.pictureBox11.BackColor = System.Drawing.Color.Maroon;
             this.pictureBox11.Location = new System.Drawing.Point(733, 229);
             this.pictureBox11.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox11.Name = "pictureBox11";
@@ -237,7 +239,7 @@ namespace WinFormsApp2
             // 
             // horizontalplatform
             // 
-            this.horizontalplatform.BackColor = System.Drawing.Color.MediumPurple;
+            this.horizontalplatform.BackColor = System.Drawing.Color.Maroon;
             this.horizontalplatform.Location = new System.Drawing.Point(415, 148);
             this.horizontalplatform.Margin = new System.Windows.Forms.Padding(4);
             this.horizontalplatform.Name = "horizontalplatform";
@@ -259,11 +261,12 @@ namespace WinFormsApp2
             // 
             // player
             // 
-            this.player.BackColor = System.Drawing.SystemColors.Window;
-            this.player.Location = new System.Drawing.Point(118, 619);
+            this.player.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.player.Image = ((System.Drawing.Image)(resources.GetObject("player.Image")));
+            this.player.Location = new System.Drawing.Point(120, 645);
             this.player.Margin = new System.Windows.Forms.Padding(4);
             this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(32, 48);
+            this.player.Size = new System.Drawing.Size(48, 48);
             this.player.TabIndex = 14;
             this.player.TabStop = false;
             // 
@@ -497,7 +500,7 @@ namespace WinFormsApp2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1328, 816);
             this.Controls.Add(this.pictureBox31);
             this.Controls.Add(this.pictureBox30);

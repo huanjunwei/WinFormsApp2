@@ -21,9 +21,11 @@ namespace WinFormsApp2
 
 
         int horizontalspeed = 5;
+
         int verticalspeed = 3;
 
         int enemy1speed = 5;
+
         int enemy2speed = 3;
 
 
@@ -68,7 +70,7 @@ namespace WinFormsApp2
             }
             if (jumping == true)
             {
-                jumpspeed = -9;
+                jumpspeed = -10;
                 force -= 1;
             }
             else 
