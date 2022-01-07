@@ -146,7 +146,7 @@ namespace WinFormsApp2
             {
                 gametimer.Stop();
                 isgameover = true;
-                textscore.Text = "score" + score + Environment.NewLine + "die!";
+                textscore.Text = "score" + score + Environment.NewLine + "loser!";
             }
             if (player.Bounds.IntersectsWith(door.Bounds) && score == 17)
             {
