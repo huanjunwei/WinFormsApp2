@@ -68,7 +68,7 @@ namespace WinFormsApp2
             }
             if (jumping == true)
             {
-                jumpspeed = -8;
+                jumpspeed = -9;
                 force -= 1;
             }
             else 
