@@ -19,8 +19,6 @@ namespace WinFormsApp2
         int score=0;
         int playerspeed = 10;
 
-
-
         int horizontalspeed = 5;
 
         int verticalspeed = 3;
