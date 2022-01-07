@@ -82,7 +82,7 @@ namespace WinFormsApp2
             {
                 if (x is PictureBox)
                 { 
-                    if ((string)x.Tag == "platform")
+                    if ((string)x.Tag == "platform") 
                     {
                         if (player.Bounds.IntersectsWith(x.Bounds))
                         {
