@@ -30,7 +30,6 @@ namespace WinFormsApp2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textscore = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -261,8 +260,7 @@ namespace WinFormsApp2
             // 
             // player
             // 
-            this.player.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.player.Image = ((System.Drawing.Image)(resources.GetObject("player.Image")));
+            this.player.BackColor = System.Drawing.SystemColors.HotTrack;
             this.player.Location = new System.Drawing.Point(120, 645);
             this.player.Margin = new System.Windows.Forms.Padding(4);
             this.player.Name = "player";

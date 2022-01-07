@@ -13,6 +13,7 @@ namespace WinFormsApp2
     public partial class Form1 : Form
     {
         Boolean goleft, goright, jumping, isgameover;
+
         int jumpspeed;
         int force;
         int score=0;
