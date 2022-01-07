@@ -13,17 +13,20 @@ namespace WinFormsApp2
     public partial class Form1 : Form
     {
         Boolean goleft, goright, jumping, isgameover;
+
         int jumpspeed;
         int force;
         int score=0;
-        int playerspeed = 7;
+        int playerspeed = 10;
 
 
 
         int horizontalspeed = 5;
+
         int verticalspeed = 3;
 
         int enemy1speed = 5;
+
         int enemy2speed = 3;
 
 
@@ -68,7 +71,11 @@ namespace WinFormsApp2
             }
             if (jumping == true)
             {
+<<<<<<< HEAD
+
+=======
                 jumpspeed = -9;
+>>>>>>> 108111108
                 force -= 1;
             }
             else 
@@ -110,7 +117,7 @@ namespace WinFormsApp2
                         {
                             gametimer.Stop();
                             isgameover = true;
-                            textscore.Text = "score:" + score + Environment.NewLine + "you die";
+                            textscore.Text = "score:" + score + Environment.NewLine + "GAME OVER";
                         }
                     }
                 }
@@ -157,21 +164,26 @@ namespace WinFormsApp2
 
 
         }
-          
-        private void keyisdown(object sender, KeyEventArgs e)
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if (e.KeyCode == Keys.Left) 
+
+        }
+
+        private void keyisdown(object sender, KeyEventArgs e) 
+        {
+            if (e.KeyCode == Keys.Left)  
             {
-                goleft = true;
-            }
-            if (e.KeyCode == Keys.Right)
+                goleft = true; 
+            } 
+            if (e.KeyCode == Keys.Right) 
             {
-                goright = true;
+                goright = true; 
             }
             if (e.KeyCode == Keys.Space && jumping ==false)
-
+                 
             {
-                jumping= true;
+                jumping= true; 
             }
             
 
