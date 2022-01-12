@@ -105,7 +105,7 @@ namespace WinFormsApp2
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Maroon;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 684);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 670);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(254, 26);
             this.pictureBox1.TabIndex = 0;
